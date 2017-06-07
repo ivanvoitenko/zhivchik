@@ -10,6 +10,11 @@ function onYouTubeIframeAPIReady() {
         },
         events: {
             onReady: initialize
+        },
+        events: {
+            onReady: function(e) {
+              e.target.mute();
+            }
         }
     });
 }
@@ -32,6 +37,11 @@ function initialize(){
 
 
     $('#volume-input').val(Math.round(player.getVolume()));
+}
+
+function onPlayerReady(event) {
+    player.mute();
+    player.playVideo();
 }
 
 
