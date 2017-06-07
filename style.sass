@@ -1,0 +1,222 @@
+@font-face
+    font-family: Cabana
+    src: url(Cabana.ttf)
+
+@font-face
+    font-family: Futura B
+    src: url(futurademic.otf)
+
+@font-face
+    font-family: Futura M
+    src: url(futuramediumc.otf)
+
+futuramediumc
+
+.navbar
+  height: 80px
+  background: #007436
+
+  .navbar-brand
+    img
+      margin-left: 80px
+
+.embed-responsive
+  margin-top: 80px
+
+  img
+    position: absolute
+    left: 40px
+    bottom: 60px
+    cursor: pointer
+
+.promo
+  padding-left: 0 !important
+  height: auto
+
+  h2
+    margin-top: 85px
+    text-transform: uppercase
+    font-family: Cabana
+    font-size: 9em
+    font-weight: 700
+    letter-spacing: 10px
+    color: #007436
+
+  .promo-text
+    p, a
+      padding-top: 40px
+      color: #007436
+      font-family: Futura M
+      font-size: 1.9em
+      font-weight: 300
+      margin-bottom: 50px
+
+    a
+      text-transform: uppercase
+      text-decoration: underline
+      font-size: 1.3em
+
+  .bottle
+    margin-top: -195px
+
+    .mobile-bottle
+      display: none
+
+    .desktop-bottle
+      display: block
+
+  .yellow-btn, .green-btn
+    margin-top: 20px
+    background: #ffe63e
+    height: 100px
+    width: 100%
+    font-family: Futura B
+    font-size: 1.5em
+    color: #007436
+    border: none
+    text-transform: uppercase
+    cursor: pointer
+
+    span
+      display: block
+
+  .green-btn
+    background: #007436
+    color: #ffe63e
+
+  .justify-content-center
+    padding-top: 40px
+    color: #007436
+    font-family: Futura M
+    font-size: 1em
+    letter-spacing: 1px
+
+.container-full
+  .row
+    margin-right: 0
+    margin-left: 0
+
+    .sky
+      width: 100%
+      height: calc(100vh - 80px)
+      background: url(C:/Users/footb/Desktop/zhivchik/img/sky-2.png) no-repeat top center
+      background-size: cover
+
+      .container-full
+        .row
+          margin-right: 0
+          margin-left: 0
+
+          .zhivchik
+            width: 100%
+            height: calc(100vh - 80px)
+            background: url(C:/Users/footb/Desktop/zhivchik/img/zhivchik.png) no-repeat bottom center
+            background-size: cover
+
+            .try-it-new
+              position: relative
+              width: 100%
+
+              .trey-it-text
+                img
+                  position: absolute
+                  right: 10%
+                  top: 20px
+
+              .green-btn
+                margin-top: 34%
+                height: 100px
+                font-family: Futura B
+                font-size: 1.5em
+                border: none
+                text-transform: uppercase
+                background: #007436
+                color: #ffe63e
+                cursor: pointer
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  .bottle
+    margin-top: -50px !important
+    transform: scale(.7)
+
+  .zhivchik
+    background: url(C:/Users/footb/Desktop/zhivchik/img/zhivchik.png) no-repeat 32% bottom !important
+
+    .trey-it-text
+      img
+        right: 0 !important
+        top: 40px !important
+        transform: scale(.8)
+
+    .green-btn
+      margin-top: 500px !important
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px)
+  .navbar
+    height: 50px
+
+    .navbar-brand
+      img
+        margin-top: -30px
+        margin-left: -25px !important
+        transform: scale(0.6)
+
+  .embed-responsive
+    margin-top: 50px
+
+    img
+      left: 20px
+      bottom: 20px
+
+  .promo
+    padding-left: 15px !important
+
+    h2
+      font-size: 4.7em
+      margin-top: 50px !important
+      letter-spacing: 2px
+
+    .promo-text
+      p, a
+        font-size: 1em
+        margin-bottom: 50px
+
+    .bottle
+      margin-top: 25px !important
+      margin-left: -35px
+
+      .mobile-bottle
+        display: block
+
+      .desktop-bottle
+        display: none
+
+    .yellow-btn, .green-btn
+      height: 60px
+      font-size: 1em
+
+    .justify-content-center
+      padding-top: 20px
+      font-size: .8em
+      letter-spacing: 0
+
+  .sky
+    height: 115vh !important
+    background: url(C:/Users/footb/Desktop/zhivchik/img/zhivchik-3.png) no-repeat bottom right !important
+    background-size: cover
+
+  .zhivchik
+    background: none !important
+
+    .try-it-new
+      .trey-it-text
+        img
+          right: -35% !important
+          transform: scale(.5)
+          top: 25px !important
+
+        .green-btn
+          margin-top: 80% !important
+          background: transparent !important
+          text-decoration: underline
+          font-size: 1em !important
