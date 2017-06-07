@@ -14,6 +14,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-100618127-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
   </head>
   <body>
     <nav class="navbar fixed-top">
@@ -37,9 +49,9 @@
               <p>
                 Реєструйся на сайті або заходь на нашу сторінку
                 на Facebook – та отримуй шанс виграти улюблений
-                "Живчик" у новому форматі. Не втрачай шансу!
+                "Живчик" у новому форматі!
               </p>
-              <a href="#">офіційні правила</a>
+              <a href="https://docs.google.com/document/d/18mw5YNRgJnib7U8ZH8loEVbmUQu01z_dTH-FhI0pf-Q/edit" target="_blank">офіційні правила</a>
             </div>
             <div class="bottle col-5 col-md-5 col-lg-4">
               <img class="desktop-bottle" src="img/bottle-3.png" alt="zhivchik">
@@ -47,13 +59,13 @@
             </div>
           </div>
           <div class="row">
-            <a href="#" class="col-12 col-md-6 col-lg-4 offset-lg-1">
-              <button type="button" class="yellow-btn" name="registration">
+            <a href="https://docs.google.com/a/mokco.com.ua/forms/d/e/1FAIpQLSdtr0clvQAKr3ofhcpCvfusqZg6CSyBvL1hrX90PMFThE8Paw/viewform" target="_blank" class="col-12 col-md-6 col-lg-4 offset-lg-1">
+              <button type="button" class="yellow-btn" name="registration" onclick="ga('send', 'event', 'Register', 'Click');">
                 зареєструватися <span>на сайті</span>
               </button>
             </a>
-            <a href="#" class="col-12 col-md-6 col-lg-4 offset-lg-2">
-              <button type="button" class="green-btn" name="promo-facebook">
+            <a href="https://www.facebook.com/zhivchik.ukraine/?fref=ts" target="_blank" class="col-12 col-md-6 col-lg-4 offset-lg-2">
+              <button type="button" class="green-btn" name="promo-facebook" onclick="ga('send', 'event', 'fb', 'click');">
                 взяти участь у активації на сторінці в FB
               </button>
             </a>
@@ -80,7 +92,7 @@
                             <img src="img/try-it-text.png" alt="Спробуй!">
                           </div>
                         </div>
-                        <a href="#">
+                        <a href="http://zhivchik.ua" target="_blank">
                           <button type="button" class="green-btn col-12 col-md-6 offset-md-5 col-lg-4 offset-lg-6" name="promo-facebook">
                             перейти на сайт
                           </button>
