@@ -68,11 +68,13 @@ $('#progress-bar').on('mouseup touchend', function (e) {
 
 $('#play').on('click', function () {
     player.playVideo();
+    mute_toggle.text('volume_up');
 });
 
 
 $('#pause').on('click', function () {
     player.pauseVideo();
+    mute_toggle.text('volume_off');
 });
 
 
