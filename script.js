@@ -68,26 +68,28 @@ $('#progress-bar').on('mouseup touchend', function (e) {
 
 $('#play').on('click', function () {
     player.playVideo();
-    mute_toggle.text('volume_up');
 });
 
 
 $('#pause').on('click', function () {
     player.pauseVideo();
-    mute_toggle.text('volume_off');
 });
 
 
 // Sound volume
 
 
-$('#mute-toggle').on('click', function() {
+$('#mute-toggle,#muted-toggle').on('click', function() {
     var mute_toggle = $(this);
 
     if(player.isMuted()){
+        mute_toggle.css({ display: "none" });
+        $("#mute-toggle").css({ 'display': "block" });
         player.unMute();
     }
     else{
+        mute_toggle.css({ display: "none" });
+        $("#muted-toggle").css({ 'display': "block" });
         player.mute();
     }
 });
